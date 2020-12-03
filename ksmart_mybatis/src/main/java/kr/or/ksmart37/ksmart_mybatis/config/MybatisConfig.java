@@ -19,6 +19,7 @@ public class MybatisConfig {
 		sqlSessionFactoryBean.setDataSource(dataSource);
 		sqlSessionFactoryBean.setMapperLocations(context.getResources("classpath:/mapper/**/*.xml"));
 		sqlSessionFactoryBean.setTypeAliasesPackage("kr.or.ksmart37.ksmart_mybatis.dto");
+		
 		return sqlSessionFactoryBean.getObject();
 	}
 }
